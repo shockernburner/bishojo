@@ -324,7 +324,7 @@ function getItemImageUrl(itemName) {
     const imageName = itemName.toLowerCase()
         .replace(/\s+/g, '-')
         .replace(/[^a-z0-9-]/g, '');
-    return `https://bishojo.pages.dev/images/${imageName}.jpg`;
+    return `https://bishojo-4zr.pages.dev/images/${imageName}.jpg`;
 }
 
 // Shopping Cart System
