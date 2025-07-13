@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bishojo Sushi | Authentic Chinese Flavors</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- EmailJS - make sure this loads before your script -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        // Initialize EmailJS when page loads
+        (function(){
+            emailjs.init("kdvoVvR5vvAE1Pomx");
+        })();
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="images/bishojo.JPG" alt="Bishojo Logo" class="logo">
+                <span class="logo-text">Bishojo</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#order">Order</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h1 class="hero-title">Bishojo Sushi</h1>
+                <p class="hero-subtitle">Authentic Chinese Flavors in Every Bite</p>
+                <p class="hero-description">Experience the original taste of sushi with our authentic Chinese preparations - where tradition meets perfection</p>
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn btn-primary">View Menu</a>
+                    <a href="#order" class="btn btn-secondary">Order Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Bishojo</h2>
+                <p>Bringing the authentic taste of China to your table</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>The Origin of Sushi</h3>
+                    <p>Did you know that sushi originated in China? At Bishojo, we honor this rich heritage by bringing you the most authentic Chinese flavors in every piece of sushi we craft.</p>
+                    <p>Our skilled chefs combine traditional Chinese techniques with the finest ingredients to create a dining experience that transports you to the very birthplace of sushi.</p>
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-fish"></i>
+                            <h4>Fresh Ingredients</h4>
+                            <p>Daily sourced premium seafood and vegetables</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-hands"></i>
+                            <h4>Traditional Craft</h4>
+                            <p>Authentic Chinese preparation methods</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-heart"></i>
+                            <h4>Made with Love</h4>
+                            <p>Every piece crafted with passion and care</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="images/bishojo.JPG" alt="Bishojo Sushi" class="about-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Menu</h2>
+                <p>Explore our authentic sushi selections</p>
+            </div>
+            
+            <!-- Maki Rolls -->
+            <div class="menu-category">
+                <h3>Maki Rolls</h3>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="images/Sunset Crispy Maki.jpg" alt="Sunset Crispy Maki" onerror="this.src='images/default-sushi.jpg'">
+                        </div>
+                        <div class="menu-item-content">
+                            <h4>Sunset Crispy Maki</h4>
+                            <p class="menu-box-count">6 pcs per box</p>
+                            <p class="menu-description">Golden-fried chicken strips, carrot wrapped in premium sushi rice and nori seaweed, serves with a hint of tangy cheese for a balanced flavor.</p>
+                            <div class="menu-item-price">BDT 329.00</div>
+                            <button class="add-to-cart-btn" onclick="addToCart('Sunset Crispy Maki', 329, 6)">Add to Cart</button>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="images/Meaty Maki.jpg" alt="Meaty Maki" onerror="this.src='images/default-sushi.jpg'">
+                        </div>
+                        <div class="menu-item-content">
+                            <h4>Meaty Maki</h4>
+                            <p class="menu-box-count">6 pcs per box</p>
+                            <p class="menu-description">Consists of savory flavors chicken floss and smoky chicken sausage wiped in premium sushi rice along with Japanese radish for more rich flavors.</p>
+                            <div class="menu-item-price">BDT 329.00</div>
+                            <button class="add-to-cart-btn" onclick="addToCart('Meaty Maki', 329, 6)">Add to Cart</button>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="images/Wildwood Maki.jpg" alt="Wildwood Maki" onerror="this.src='images/default-sushi.jpg'">
+                        </div>
+                        <div class="menu-item-content">
+                            <h4>Wildwood Maki</h4>
+                            <p class="menu-box-count">6 pcs per box</p>
+                            <p class="menu-description">Consists of mushroom and capsicum with sushi rice wrapped in nori which is the vegetarians-friendly masterpiece.</p>
+                            <div class="menu-item-price">BDT 229.00</div>
+                            <button class="add-to-cart-btn" onclick="addToCart('Wildwood Maki', 229, 6)">Add to Cart</button>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="images/Breeze Maki.jpg" alt="Breeze Maki" onerror="this.src='images/default-sushi.jpg'">
+                        </div>
+                        <div class="menu-item-content">
+                            <h4>Breeze Maki</h4>
+                            <p class="menu-box-count">6 pcs per box</p>
+                            <p class="menu-description">Consists of crab stick, carrot and refreshing cucumber, all wrapped in a delicate layer of sushi rice and nori. Topped with sprinkle fish egg offers burst crunch.</p>
+                            <div class="menu-item-price">BDT 399.00</div>
+                            <button class="add-to-cart-btn" onclick="addToCart('Breeze Maki', 399, 6)">Add to Cart</button>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="images/Steakira Maki.jpg" alt="Steakira Maki" onerror="this.src='images/default-sushi.jpg'">
+                        </div>
+                        <div class="menu-item-content">
+                            <h4>Steakira Maki</h4>
+                            <p class="menu-box-count">6 pcs per box</p>
+                            <p class="menu-description">Consists of BBQ beef steak, crispy strips, and fresh carrot, all rolled into one unforgettable sushi rice and nori. Each bite delivers the smoky richness.</p>
+                            <div class="menu-item-price">BDT 349.00</div>
+                            <button class="add-to-cart-btn" onclick="addToCart('Steakira Maki', 349, 6)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gunkan -->
+            <div class="menu-category">
+                <h3>Gunkan Selection</h3>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="images/Corn Gunkan.jpg" alt="Corn Gunkan" onerror="this.src='images/default-sushi.jpg'">
+                        </div>
+                        <div class="menu-item-content">
+                            <h4>Corn Gunkan</h4>
+                            <p class="menu-box-count">5 pcs per box</p>
+                            <p class="menu-description">Contain crispy nori and seasoned sushi rice, topped with a golden burst of sweet, buttery corn and a delicate drizzle of creamy mayo.</p>
+                            <div class="menu-item-price">BDT 199.00</div>
+                            <button class="add-to-cart-btn" onclick="addToCart('Corn Gunkan', 199, 5)">Add to Cart</button>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="images/Tuna Gunkan.jpg" alt="Tuna Gunkan" onerror="this.src='images/default-sushi.jpg'">
+                        </div>
+                        <div class="menu-item-content">
+                            <h4>Tuna Gunkan</h4>
+                            <p class="menu-box-count">5 pcs per box</p>
+                            <p class="menu-description">Crisp nori and seasoned sushi rice, topped with premium tuna, lightly marinated in soy-dipped glory and finished with sea flavor.</p>
+                            <div class="menu-item-price">BDT 299.00</div>
+                            <button class="add-to-cart-btn" onclick="addToCart('Tuna Gunkan', 299, 5)">Add to Cart</button>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="images/Chunks Wakame Gunkan.jpg" alt="Chunks Wakame Gunkan" onerror="this.src='images/default-sushi.jpg'">
+                        </div>
+                        <div class="menu-item-content">
+                            <h4>Chunks Wakame Gunkan</h4>
+                            <p class="menu-box-count">5 pcs per box</p>
+                            <p class="menu-description">Crisp nori and seasoned sushi rice, topped with a confetti of seaweed flakes, sesame seed.</p>
+                            <div class="menu-item-price">BDT 229.00</div>
+                            <button class="add-to-cart-btn" onclick="addToCart('Chunks Wakame Gunkan', 229, 5)">Add to Cart</button>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="images/Ebiko Gunkan.jpg" alt="Ebiko Gunkan" onerror="this.src='images/default-sushi.jpg'">
+                        </div>
+                        <div class="menu-item-content">
+                            <h4>Ebiko Gunkan</h4>
+                            <p class="menu-box-count">5 pcs per box</p>
+                            <p class="menu-description">Crisp nori and seasoned sushi rice, topped with generous mound of premium fish egg.</p>
+                            <div class="menu-item-price">BDT 329.00</div>
+                            <button class="add-to-cart-btn" onclick="addToCart('Ebiko Gunkan', 329, 5)">Add to Cart</button>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="images/Kimchi Gunkan.jpg" alt="Kimchi Gunkan" onerror="this.src='images/default-sushi.jpg'">
+                        </div>
+                        <div class="menu-item-content">
+                            <h4>Kimchi Gunkan</h4>
+                            <p class="menu-box-count">5 pcs per box</p>
+                            <p class="menu-description">Crisp nori and seasoned sushi rice, topped with spicy, tangy kimchi cabbage that is as explosive as addictive.</p>
+                            <div class="menu-item-price">BDT 229.00</div>
+                            <button class="add-to-cart-btn" onclick="addToCart('Kimchi Gunkan', 229, 5)">Add to Cart</button>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="images/Kani Salad Gunkan.jpg" alt="Kani Salad Gunkan" onerror="this.src='images/default-sushi.jpg'">
+                        </div>
+                        <div class="menu-item-content">
+                            <h4>Kani Salad Gunkan</h4>
+                            <p class="menu-box-count">5 pcs per box</p>
+                            <p class="menu-description">Crisp nori and seasoned sushi rice, cropped with generous mound of high quality crab stick mixed with fish egg.</p>
+                            <div class="menu-item-price">BDT 329.00</div>
+                            <button class="add-to-cart-btn" onclick="addToCart('Kani Salad Gunkan', 329, 5)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cart Summary -->
+            <div class="cart-summary" id="cartSummary" style="display: none;">
+                <h3><i class="fas fa-shopping-cart"></i> Your Order</h3>
+                <div class="cart-items" id="cartItems"></div>
+                <div class="cart-delivery">
+                    <div class="delivery-charge">
+                        <span>Delivery Charge:</span>
+                        <span>BDT 60.00</span>
+                    </div>
+                </div>
+                <div class="cart-total">
+                    <strong>Total: BDT <span id="cartTotal">60.00</span></strong>
+                </div>
+                <div class="cart-actions">
+                    <button class="clear-cart-btn" onclick="clearCart()">Clear Cart</button>
+                    <button class="checkout-btn" onclick="proceedToOrder()">Proceed to Order</button>
+                </div>
+            </div>
+
+            <!-- WhatsApp Order Option -->
+            <div class="whatsapp-order">
+                <div class="whatsapp-order-content">
+                    <h3>OR ORDER ON WHATSAPP</h3>
+                    <p>Browse our complete catalog and place orders directly</p>
+                    <a href="https://wa.me/c/8801721779304" target="_blank" class="whatsapp-catalog-btn">
+                        <i class="fab fa-whatsapp"></i> View WhatsApp Catalog
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Section -->
+    <section id="order" class="order">
+        <div class="container">
+            <div class="section-header">
+                <h2>Place Your Order</h2>
+                <p>Fill out the form below to place your order</p>
+            </div>
+            <div class="order-info">
+                <div class="delivery-info">
+                    <h3><i class="fas fa-truck"></i> Delivery Information</h3>
+                    <p><strong>Current Delivery Area:</strong> Bashundhara R/A</p>
+                    <p><strong>Coming Soon:</strong> Other locations in Dhaka</p>
+                    <p><strong>Payment Method:</strong> Cash on Delivery only</p>
+                </div>
+            </div>
+            <form id="orderForm" class="order-form">
+                <div class="form-group">
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number *</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Delivery Address *</label>
+                    <textarea id="address" name="address" rows="3" required placeholder="Please provide complete address within Bashundhara R/A"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="special">Special Instructions</label>
+                    <textarea id="special" name="special" rows="2" placeholder="Any special requests or dietary restrictions"></textarea>
+                </div>
+                <!-- Order items will be automatically populated from cart -->
+                <input type="hidden" id="orderItems" name="items" value="">
+                <div class="order-summary-form" id="orderSummaryForm" style="display: none;">
+                    <h4>Order Summary</h4>
+                    <div class="order-items-display" id="orderItemsDisplay"></div>
+                    <div class="order-total-display">
+                        <strong>Total (including delivery): BDT <span id="orderTotalDisplay">60.00</span></strong>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Place Order</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Us</h2>
+                <p>Get in touch with Bishojo</p>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fab fa-whatsapp"></i>
+                    <h3>WhatsApp</h3>
+                    <p><a href="https://wa.me/8801721779304">+880 1721 779304</a></p>
+                    <p><a href="https://wa.me/c/8801721779304">View Catalog</a></p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p><a href="mailto:sales@bishojo.store">sales@bishojo.store</a></p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Delivery Area</h3>
+                    <p>Bashundhara R/A</p>
+                    <p><small>Expanding to other areas soon</small></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/bishojo.JPG" alt="Bishojo Logo" class="footer-logo-img">
+                    <span class="footer-logo-text">Bishojo</span>
+                </div>
+                <p>&copy; 2025 Bishojo Sushi. All rights reserved.</p>
+                <p>Authentic Chinese Flavors | Cash on Delivery | Bashundhara R/A</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Your script should load AFTER EmailJS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
